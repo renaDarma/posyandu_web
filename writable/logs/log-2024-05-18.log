@@ -1,0 +1,36 @@
+CRITICAL - 2024-05-18 07:40:33 --> Undefined variable $bu
+in APPPATH\Views\kader\anak\detailanak.php on line 66.
+ 1 APPPATH\Views\kader\anak\detailanak.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bu', 'APPPATH\\Views\\kader\\anak\\detailanak.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\detailanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/detailanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(173): view('kader/anak/detailanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->detailanak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 07:41:03 --> Undefined variable $bu
+in APPPATH\Views\kader\anak\detailanak.php on line 66.
+ 1 APPPATH\Views\kader\anak\detailanak.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bu', 'APPPATH\\Views\\kader\\anak\\detailanak.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\detailanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/detailanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(173): view('kader/anak/detailanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->detailanak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 07:41:46 --> Undefined variable $tuu
+in APPPATH\Views\kader\anak\detailanak.php on line 66.
+ 1 APPPATH\Views\kader\anak\detailanak.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tuu', 'APPPATH\\Views\\kader\\anak\\detailanak.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\detailanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/detailanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(173): view('kader/anak/detailanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->detailanak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

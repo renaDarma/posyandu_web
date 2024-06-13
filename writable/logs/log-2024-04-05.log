@@ -1,0 +1,55 @@
+ERROR - 2024-04-05 03:26:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(45): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(138): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/ortu/tamb...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Ortu.php(49): view('kader/ortu/tamb...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Ortu->tambahortu()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ortu))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-04-05 03:26:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(45): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(138): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/ortu/tambahortu', [], true)
+16 APPPATH\Controllers\Ortu.php(49): view('kader/ortu/tambahortu', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ortu->tambahortu()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ortu))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

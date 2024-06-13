@@ -1,0 +1,92 @@
+CRITICAL - 2023-06-21 02:57:19 --> Call to undefined method App\Models\BidanModel::getAllData
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Bidan.php(244): CodeIgniter\Model->__call('getAllData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bidan->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bidan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-21 02:59:44 --> Undefined variable $anak
+in APPPATH\Views\admin\bidan\pdfbidan.php on line 94.
+ 1 APPPATH\Views\admin\bidan\pdfbidan.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anak', 'APPPATH\\Views\\admin\\bidan\\pdfbidan.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\bidan\\pdfbidan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/bidan/pdfbidan', [], true)
+ 5 APPPATH\Controllers\Bidan.php(262): view('admin/bidan/pdfbidan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bidan->pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bidan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-21 03:00:05 --> Undefined property: stdClass::$tgllhr
+in APPPATH\Views\admin\bidan\pdfbidan.php on line 100.
+ 1 APPPATH\Views\admin\bidan\pdfbidan.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tgllhr', 'APPPATH\\Views\\admin\\bidan\\pdfbidan.php', 100)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\bidan\\pdfbidan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/bidan/pdfbidan', [], true)
+ 5 APPPATH\Controllers\Bidan.php(262): view('admin/bidan/pdfbidan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bidan->pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bidan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-21 03:21:19 --> Call to undefined method App\Models\KaderModel::getAllData
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Kader.php(282): CodeIgniter\Model->__call('getAllData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kader->excel()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kader))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-21 07:07:37 --> Undefined property: stdClass::$ketlila
+in APPPATH\Controllers\Kesbumil.php on line 460.
+ 1 APPPATH\Controllers\Kesbumil.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ketlila', 'APPPATH\\Controllers\\Kesbumil.php', 460)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kesbumil->excel()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kesbumil))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-21 07:07:38 --> Undefined property: stdClass::$ketlila
+in APPPATH\Views\admin\kesbumil\pdfkesbumil.php on line 109.
+ 1 APPPATH\Views\admin\kesbumil\pdfkesbumil.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ketlila', 'APPPATH\\Views\\admin\\kesbumil\\pdfkesbumil.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\kesbumil\\pdfkesbumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/kesbumil/pdfkesbumil', [], true)
+ 5 APPPATH\Controllers\Kesbumil.php(386): view('admin/kesbumil/pdfkesbumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kesbumil->pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kesbumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-21 07:07:39 --> Undefined property: stdClass::$ketlila
+in APPPATH\Views\admin\kesbumil\pdfkesbumil.php on line 109.
+ 1 APPPATH\Views\admin\kesbumil\pdfkesbumil.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ketlila', 'APPPATH\\Views\\admin\\kesbumil\\pdfkesbumil.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\kesbumil\\pdfkesbumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/kesbumil/pdfkesbumil', [], true)
+ 5 APPPATH\Controllers\Kesbumil.php(386): view('admin/kesbumil/pdfkesbumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kesbumil->pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kesbumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-21 08:46:15 --> Invalid file: kader/dataimunanak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kader/dataimunanak.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/dataimunanak', [], true)
+ 3 APPPATH\Controllers\Imunisasi.php(38): view('kader/dataimunanak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-21 08:53:06 --> Invalid file: kader/dataimunanak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kader/dataimunanak.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/dataimunanak', [], true)
+ 3 APPPATH\Controllers\Imunisasi.php(38): view('kader/dataimunanak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

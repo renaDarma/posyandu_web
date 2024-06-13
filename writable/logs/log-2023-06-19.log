@@ -1,0 +1,505 @@
+CRITICAL - 2023-06-19 09:42:35 --> The route for "store_passresetku" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('store_passresetku')
+ 2 APPPATH\Views\profil\resetpass.php(40): url_to('store_passresetku')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\resetpass.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/resetpass', [], true)
+ 6 APPPATH\Controllers\Resetpass.php(16): view('profil/resetpass', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 09:42:40 --> The route for "store_passresetku" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('store_passresetku')
+ 2 APPPATH\Views\profil\resetpass.php(40): url_to('store_passresetku')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\resetpass.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/resetpass', [], true)
+ 6 APPPATH\Controllers\Resetpass.php(16): view('profil/resetpass', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 09:43:12 --> The route for "store_passresetku" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('store_passresetku')
+ 2 APPPATH\Views\profil\resetpass.php(40): url_to('store_passresetku')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\resetpass.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/resetpass', [], true)
+ 6 APPPATH\Controllers\Resetpass.php(16): view('profil/resetpass', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 09:43:27 --> The route for "store_passresetku" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('store_passresetku')
+ 2 APPPATH\Views\profil\resetpass.php(40): url_to('store_passresetku')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\resetpass.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/resetpass', [], true)
+ 6 APPPATH\Controllers\Resetpass.php(16): view('profil/resetpass', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 09:43:31 --> The route for "store_passresetku" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('store_passresetku')
+ 2 APPPATH\Views\profil\resetpass.php(40): url_to('store_passresetku')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\resetpass.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/resetpass', [], true)
+ 6 APPPATH\Controllers\Resetpass.php(16): view('profil/resetpass', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 09:44:48 --> Undefined variable $request
+in APPPATH\Views\profil\resetpass.php on line 40.
+ 1 APPPATH\Views\profil\resetpass.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Views\\profil\\resetpass.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\resetpass.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/resetpass', [], true)
+ 5 APPPATH\Controllers\Resetpass.php(16): view('profil/resetpass', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 10:09:55 --> Undefined variable $title
+in APPPATH\Views\template\index.php on line 10.
+ 1 APPPATH\Views\template\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('masyarakat/index', [], true)
+ 6 APPPATH\Controllers\Masyarakat.php(20): view('masyarakat/index')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 10:12:45 --> Undefined variable $title
+in APPPATH\Views\template\index.php on line 10.
+ 1 APPPATH\Views\template\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('masyarakat/index', [], true)
+ 6 APPPATH\Controllers\Masyarakat.php(20): view('masyarakat/index')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 10:13:07 --> Undefined variable $title
+in APPPATH\Views\template\index.php on line 10.
+ 1 APPPATH\Views\template\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('masyarakat/index', [], true)
+ 6 APPPATH\Controllers\Masyarakat.php(20): view('masyarakat/index')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 10:13:56 --> Call to undefined method Myth\Auth\Entities\User::update()
+in APPPATH\Controllers\Resetpass.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 19:57:44 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 19:57:47 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 19:57:56 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 19:58:00 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 19:58:50 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:09:48 --> Undefined variable $title
+in APPPATH\Views\template\index.php on line 10.
+ 1 APPPATH\Views\template\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('masyarakat/index', [], true)
+ 6 APPPATH\Controllers\Masyarakat.php(20): view('masyarakat/index')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:10:16 --> Call to undefined method Myth\Auth\Entities\User::save()
+in APPPATH\Controllers\Resetpass.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:12:17 --> Undefined property: App\Controllers\Resetpass::$userModel
+in APPPATH\Controllers\Resetpass.php on line 35.
+ 1 APPPATH\Controllers\Resetpass.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Resetpass::$userModel', 'APPPATH\\Controllers\\Resetpass.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:13:35 --> Undefined property: App\Controllers\Resetpass::$dataModel
+in APPPATH\Controllers\Resetpass.php on line 35.
+ 1 APPPATH\Controllers\Resetpass.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Resetpass::$dataModel', 'APPPATH\\Controllers\\Resetpass.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:13:53 --> Call to undefined method Myth\Auth\Entities\User::save()
+in APPPATH\Controllers\Resetpass.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:14:29 --> Call to undefined method Myth\Auth\Entities\User::save()
+in APPPATH\Controllers\Resetpass.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:22:52 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Resetpass.php(37): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:23:03 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Resetpass.php(37): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:23:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Resetpass.php(37): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:23:59 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Resetpass.php(37): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:24:10 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Resetpass.php(37): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:25:04 --> syntax error, unexpected variable "$userModel"
+in APPPATH\Controllers\Resetpass.php on line 36.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Resetpass.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Resetpass')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Resetpass')
+ 4 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\Resetpass', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:25:10 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Resetpass.php(37): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:25:19 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Resetpass.php(37): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->resetPassword('4')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:52:37 --> Undefined property: App\Controllers\Login::$db
+in APPPATH\Controllers\Login.php on line 15.
+ 1 APPPATH\Controllers\Login.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$db', 'APPPATH\\Controllers\\Login.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:52:51 --> Undefined property: App\Controllers\Login::$db
+in APPPATH\Controllers\Login.php on line 15.
+ 1 APPPATH\Controllers\Login.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$db', 'APPPATH\\Controllers\\Login.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:53:07 --> Undefined property: App\Controllers\Login::$db
+in APPPATH\Controllers\Login.php on line 15.
+ 1 APPPATH\Controllers\Login.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$db', 'APPPATH\\Controllers\\Login.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:55:11 --> Undefined variable $db
+in APPPATH\Controllers\Login.php on line 15.
+ 1 APPPATH\Controllers\Login.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Login.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:56:24 --> CodeIgniter\Database\BaseBuilder::getWhere(): Argument #2 ($limit) must be of type ?int, string given, called in D:\www\rizkydharma\taposyandu\app\Controllers\Login.php on line 17
+in SYSTEMPATH\Database\BaseBuilder.php on line 1706.
+ 1 APPPATH\Controllers\Login.php(17): CodeIgniter\Database\BaseBuilder->getWhere('email', 'FCPATH\\admin')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:57:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::rowData()
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 20:57:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:04:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Login.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:05:11 --> Call to a member function row() on array
+in APPPATH\Controllers\Login.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:06:20 --> Call to a member function row() on array
+in APPPATH\Controllers\Login.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:06:26 --> Undefined array key "password_hash"
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password_hash"', 'APPPATH\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:06:38 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Login.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:06:54 --> Undefined array key "id"
+in APPPATH\Controllers\Login.php on line 25.
+ 1 APPPATH\Controllers\Login.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Login.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:35:46 --> Undefined property: App\Controllers\Masyarakat::$penimbanganModel
+in APPPATH\Controllers\Masyarakat.php on line 42.
+ 1 APPPATH\Controllers\Masyarakat.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Masyarakat::$penimbanganModel', 'APPPATH\\Controllers\\Masyarakat.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->riwayatpenimbangan()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:36:37 --> Cannot redeclare App\Models\PenimbanganModel::getAllData()
+in APPPATH\Models\PenimbanganModel.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 21:41:53 --> Undefined variable $validation
+in APPPATH\Views\masyarakat\datapenimbanganak.php on line 247.
+ 1 APPPATH\Views\masyarakat\datapenimbanganak.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\masyarakat\\datapenimbanganak.php', 247)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masyarakat\\datapenimbanganak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('masyarakat/datapenimbanganak', [], true)
+ 5 APPPATH\Controllers\Masyarakat.php(58): view('masyarakat/datapenimbanganak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->riwayatpenimbangan()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 21:42:14 --> Undefined variable $validation
+in APPPATH\Views\masyarakat\datapenimbanganak.php on line 246.
+ 1 APPPATH\Views\masyarakat\datapenimbanganak.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\masyarakat\\datapenimbanganak.php', 246)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\masyarakat\\datapenimbanganak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('masyarakat/datapenimbanganak', [], true)
+ 5 APPPATH\Controllers\Masyarakat.php(58): view('masyarakat/datapenimbanganak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->riwayatpenimbangan()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-19 21:44:11 --> mysqli_sql_exception: Column 'idbumil' in where clause is ambiguous in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimba...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimba...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimba...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimba...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\app\Models\PenimbanganModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\www\rizkydharma\taposyandu\app\Controllers\Masyarakat.php(46): App\Models\PenimbanganModel->getAllDataMasyarakat()
+#6 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Masyarakat->riwayatpenimbangan()
+#7 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#11 {main}
+CRITICAL - 2023-06-19 21:44:11 --> Column 'idbumil' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+WHERE `idbumil` = \'4\'
+ORDER BY `penimbangan`.`idpenimbangan` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+WHERE `idbumil` = \'4\'
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+WHERE `idbumil` = \'4\'
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+WHERE `idbumil` = :idbumil:
+ORDER BY `penimbangan`.`idpenimbangan` DESC', [...], false)
+ 5 APPPATH\Models\PenimbanganModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Masyarakat.php(46): App\Models\PenimbanganModel->getAllDataMasyarakat()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->riwayatpenimbangan()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,12 @@
+CRITICAL - 2023-05-07 21:15:01 --> Undefined variable $imunisasi
+in APPPATH\Views\kader\detailpenimbanganak.php on line 42.
+ 1 APPPATH\Views\kader\detailpenimbanganak.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imunisasi', 'APPPATH\\Views\\kader\\detailpenimbanganak.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\detailpenimbanganak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/detailpenimbanganak', [], true)
+ 5 APPPATH\Controllers\Penimbangan.php(150): view('kader/detailpenimbanganak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->detailpenimbanganak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,12 @@
+CRITICAL - 2024-01-18 02:32:29 --> Undefined property: stdClass::$name
+in APPPATH\Views\admin\datauser.php on line 67.
+ 1 APPPATH\Views\admin\datauser.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'APPPATH\\Views\\admin\\datauser.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/datauser', [], true)
+ 5 APPPATH\Controllers\Admin.php(97): view('admin/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->datauser()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

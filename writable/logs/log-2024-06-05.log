@@ -1,0 +1,177 @@
+ERROR - 2024-06-05 02:43:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'posyandu', 3306, '', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+#5 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-06-05 02:43:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 3 APPPATH\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-05 02:44:09 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'posyandu', 3306, '', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+#5 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-06-05 02:44:09 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 3 APPPATH\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-05 02:44:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'posyandu', 3306, '', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+#5 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-06-05 02:44:35 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 3 APPPATH\Models\AllModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\api\ManageAll.php(48): App\Models\AllModel->login('Sania Malaika', 'coba123')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-05 02:56:49 --> Call to a member function find() on null
+in APPPATH\Controllers\api\ManageAll.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->getProfil('1')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-05 02:58:19 --> Call to a member function find() on null
+in APPPATH\Controllers\api\ManageAll.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->getProfil('29')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-05 02:58:22 --> Call to a member function find() on null
+in APPPATH\Controllers\api\ManageAll.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->getProfil('1')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-05 02:58:42 --> Call to a member function find() on null
+in APPPATH\Controllers\api\ManageAll.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->getProfil('1')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-05 03:00:45 --> Too few arguments to function App\Controllers\api\ManageAll::getProfil(), 0 passed in C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php on line 106 and exactly 1 expected
+in APPPATH\Controllers\api\ManageAll.php on line 104.
+ 1 APPPATH\Controllers\api\ManageAll.php(106): App\Controllers\api\ManageAll->getProfil()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->getProfil('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-05 03:09:40 --> Call to a member function find() on array
+in APPPATH\Controllers\api\ManageAll.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->getProfil('1')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-05 03:13:24 --> Too few arguments to function App\Models\AllModel::getProfil(), 0 passed in C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php on line 106 and exactly 1 expected
+in APPPATH\Models\AllModel.php on line 127.
+ 1 APPPATH\Controllers\api\ManageAll.php(106): App\Models\AllModel->getProfil()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->getProfil('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

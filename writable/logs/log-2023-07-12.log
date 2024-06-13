@@ -1,0 +1,196 @@
+CRITICAL - 2023-07-12 04:05:35 --> Call to undefined method App\Models\AnakModel::getDataBumil
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Anak.php(45): CodeIgniter\Model->__call('getDataBumil', [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-07-12 04:08:52 --> mysqli_sql_exception: Not unique table/alias: 'bumil' in C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `bumil`....', 0)
+#1 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bumil`....')
+#2 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bumil`....')
+#3 C:\xampp\htdocs\posyandu_ta\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `bumil`....', Array, false)
+#4 C:\xampp\htdocs\posyandu_ta\app\Models\AnakModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\posyandu_ta\app\Controllers\Anak.php(45): App\Models\AnakModel->getDataBumil()
+#6 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+#7 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu_ta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu_ta\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-12 04:08:52 --> Not unique table/alias: 'bumil'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `bumil`.`idbumil`, `bumil`.`bumilnama`, `bumil`.`ayahnama`, `anak`.*
+FROM `bumil`
+LEFT JOIN `bumil` ON `anak`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `bumil`.`idbumil` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bumil`.`idbumil`, `bumil`.`bumilnama`, `bumil`.`ayahnama`, `anak`.*
+FROM `bumil`
+LEFT JOIN `bumil` ON `anak`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `bumil`.`idbumil` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bumil`.`idbumil`, `bumil`.`bumilnama`, `bumil`.`ayahnama`, `anak`.*
+FROM `bumil`
+LEFT JOIN `bumil` ON `anak`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `bumil`.`idbumil` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `bumil`.`idbumil`, `bumil`.`bumilnama`, `bumil`.`ayahnama`, `anak`.*
+FROM `bumil`
+LEFT JOIN `bumil` ON `anak`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `bumil`.`idbumil` DESC', [], false)
+ 5 APPPATH\Models\AnakModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(45): App\Models\AnakModel->getDataBumil()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-07-12 04:10:02 --> mysqli_sql_exception: Unknown column 'bumil.bumilnama' in 'field list' in C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `bumil`....', 0)
+#1 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bumil`....')
+#2 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bumil`....')
+#3 C:\xampp\htdocs\posyandu_ta\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `bumil`....', Array, false)
+#4 C:\xampp\htdocs\posyandu_ta\app\Models\AnakModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\posyandu_ta\app\Controllers\Anak.php(45): App\Models\AnakModel->getDataBumil()
+#6 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+#7 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu_ta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu_ta\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-12 04:10:02 --> Unknown column 'bumil.bumilnama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `bumil`.`idbumil`, `bumil`.`bumilnama`, `bumil`.`ayahnama`, `anak`.*
+FROM `bumil`
+LEFT JOIN `anak` ON `anak`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `bumil`.`idbumil` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bumil`.`idbumil`, `bumil`.`bumilnama`, `bumil`.`ayahnama`, `anak`.*
+FROM `bumil`
+LEFT JOIN `anak` ON `anak`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `bumil`.`idbumil` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bumil`.`idbumil`, `bumil`.`bumilnama`, `bumil`.`ayahnama`, `anak`.*
+FROM `bumil`
+LEFT JOIN `anak` ON `anak`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `bumil`.`idbumil` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `bumil`.`idbumil`, `bumil`.`bumilnama`, `bumil`.`ayahnama`, `anak`.*
+FROM `bumil`
+LEFT JOIN `anak` ON `anak`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `bumil`.`idbumil` DESC', [], false)
+ 5 APPPATH\Models\AnakModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(45): App\Models\AnakModel->getDataBumil()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 04:10:23 --> Cannot use object of type stdClass as array
+in APPPATH\Views\kader\anak\tambahanak.php on line 176.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+ 4 APPPATH\Controllers\Anak.php(51): view('kader/anak/tambahanak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 04:11:08 --> Cannot use object of type stdClass as array
+in APPPATH\Views\kader\anak\tambahanak.php on line 176.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+ 4 APPPATH\Controllers\Anak.php(51): view('kader/anak/tambahanak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 04:57:00 --> Undefined variable $currentPage
+in APPPATH\Views\kader\anak\tambahanak.php on line 194.
+ 1 APPPATH\Views\kader\anak\tambahanak.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\kader\\anak\\tambahanak.php', 194)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\tambahanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(51): view('kader/anak/tambahanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 05:08:19 --> Attempt to read property "ibunama" on array
+in APPPATH\Views\kader\anak\tambahanak.php on line 198.
+ 1 APPPATH\Views\kader\anak\tambahanak.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ibunama" on array', 'APPPATH\\Views\\kader\\anak\\tambahanak.php', 198)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\tambahanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(56): view('kader/anak/tambahanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-07-12 05:18:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyanduta`.`anak`, CONSTRAINT `anak_bumil` FOREIGN KEY (`idbumil`) REFERENCES `bumil` (`idbumil`)) in C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\posyandu_ta\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\posyandu_ta\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu_ta\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu_ta\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu_ta\app\Controllers\Anak.php(145): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(898): App\Controllers\Anak->save()
+#9 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#10 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu_ta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu_ta\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-07-12 08:01:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyanduta`.`anak`, CONSTRAINT `anak_bumil` FOREIGN KEY (`idbumil`) REFERENCES `bumil` (`idbumil`)) in C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\posyandu_ta\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\posyandu_ta\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu_ta\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu_ta\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu_ta\app\Controllers\Anak.php(146): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(898): App\Controllers\Anak->save()
+#9 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#10 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu_ta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu_ta\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-07-12 08:02:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyanduta`.`anak`, CONSTRAINT `anak_bumil` FOREIGN KEY (`idbumil`) REFERENCES `bumil` (`idbumil`)) in C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\posyandu_ta\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\posyandu_ta\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu_ta\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu_ta\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu_ta\app\Controllers\Anak.php(146): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(898): App\Controllers\Anak->save()
+#9 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#10 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu_ta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu_ta\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-07-12 08:02:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyanduta`.`anak`, CONSTRAINT `anak_bumil` FOREIGN KEY (`idbumil`) REFERENCES `bumil` (`idbumil`)) in C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posyandu_ta\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\posyandu_ta\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\posyandu_ta\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\posyandu_ta\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu_ta\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu_ta\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu_ta\app\Controllers\Anak.php(146): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(898): App\Controllers\Anak->save()
+#9 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#10 C:\xampp\htdocs\posyandu_ta\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu_ta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu_ta\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}

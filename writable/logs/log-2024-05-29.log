@@ -1,0 +1,28 @@
+ERROR - 2024-05-29 04:45:47 --> mysqli_sql_exception: Duplicate entry 'admin1@gmail.com' for key 'email' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(92): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(75): App\Models\AllModel->register('admin1', 'admin1@gmail.co...', '081252532437', 'admin123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->register_post()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-05-29 04:50:52 --> mysqli_sql_exception: Duplicate entry 'kader1@gmail.com' for key 'email' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(92): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(75): App\Models\AllModel->register('kader1', 'kader1@gmail.co...', '085331786387', 'kader123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->register_post()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}

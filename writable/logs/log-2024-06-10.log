@@ -1,0 +1,2117 @@
+CRITICAL - 2024-06-10 01:39:04 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 APPPATH\Models\AllModel.php(144): CodeIgniter\Database\BaseConnection->table(null)
+ 2 APPPATH\Controllers\api\ManageAll.php(125): App\Models\AllModel->get_imunisasi('9')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->getImunisasi('9')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 03:28:46 --> mysqli_sql_exception: Unknown column 'user.id' in 'on clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 03:28:46 --> Unknown column 'user.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = :username:', [...], false)
+ 5 APPPATH\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 03:28:53 --> mysqli_sql_exception: Unknown column 'user.id' in 'on clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 03:28:53 --> Unknown column 'user.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = :username:', [...], false)
+ 5 APPPATH\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 03:28:56 --> mysqli_sql_exception: Unknown column 'user.id' in 'on clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 03:28:56 --> Unknown column 'user.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = :username:', [...], false)
+ 5 APPPATH\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 03:28:59 --> mysqli_sql_exception: Unknown column 'user.id' in 'on clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 03:28:59 --> Unknown column 'user.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = \'saniamalaika\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+LEFT JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `username` = :username:', [...], false)
+ 5 APPPATH\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 03:33:45 --> mysqli_sql_exception: Unknown column 'user.id' in 'on clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 03:33:45 --> Unknown column 'user.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `users`.`username` = \'saniamalaika\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `users`.`username` = \'saniamalaika\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `users`.`username` = \'saniamalaika\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+JOIN `anak` ON `user`.`id` = `anak`.`iduser`
+WHERE `users`.`username` = :users.username:', [...], false)
+ 5 APPPATH\Models\AllModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\api\ManageAll.php(34): App\Models\AllModel->login('saniamalaika', 'coba123')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\api\ManageAll->login()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\ManageAll))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 03:37:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 03:37:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:17:25 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`posyandu`.`imunisasi`, CONSTRAINT `imun_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `an...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `an...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `an...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `an...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(298): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->hapusanak('12')
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-10 08:17:25 --> Cannot delete or update a parent row: a foreign key constraint fails (`posyandu`.`imunisasi`, CONSTRAINT `imun_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `anak`
+WHERE `idanak` IN (\'12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `anak`
+WHERE `idanak` IN (\'12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `anak`
+WHERE `idanak` IN (\'12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `anak`
+WHERE `idanak` IN :idanak:', [...], false)
+ 5 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Anak.php(298): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->hapusanak('12')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:18:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 08:18:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:19:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 08:19:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:19:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 08:19:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:22:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 08:22:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:29:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 08:29:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:56:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 08:56:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:56:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 08:56:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 08:56:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 08:56:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 09:06:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 09:06:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 09:07:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 09:07:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 09:11:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 09:11:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 09:11:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 09:11:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 09:25:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(156): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-06-10 17:49:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC' at line 4 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.*...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.*...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.*...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.*...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AnakModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(36): App\Models\AnakModel->getAllData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 17:49:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` USING (`user`.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` USING (`user`.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` USING (`user`.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` USING (`user`.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC', [], false)
+ 5 APPPATH\Models\AnakModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(36): App\Models\AnakModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 17:50:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC' at line 4 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.*...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.*...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.*...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.*...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AnakModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(36): App\Models\AnakModel->getAllData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 17:50:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` USING (`user`.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` USING (`user`.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` USING (`user`.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` USING (`user`.`idanakiduser`)
+ORDER BY `anak`.`idanak` DESC', [], false)
+ 5 APPPATH\Models\AnakModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(36): App\Models\AnakModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 17:51:54 --> mysqli_sql_exception: Table 'posyandu.user' doesn't exist in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.*...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.*...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.*...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.*...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AnakModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(36): App\Models\AnakModel->getAllData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 17:51:54 --> Table 'posyandu.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` ON `user`.`id` = `anak`.`iduser`
+ORDER BY `anak`.`idanak` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` ON `user`.`id` = `anak`.`iduser`
+ORDER BY `anak`.`idanak` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` ON `user`.`id` = `anak`.`iduser`
+ORDER BY `anak`.`idanak` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.*, `ortu`.`idortu`, `ortu`.`ayahnama`, `ortu`.`ibunama`
+FROM `anak`
+LEFT JOIN `ortu` ON `ortu`.`idortu` = `anak`.`idortu`
+LEFT JOIN `user` ON `user`.`id` = `anak`.`iduser`
+ORDER BY `anak`.`idanak` DESC', [], false)
+ 5 APPPATH\Models\AnakModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(36): App\Models\AnakModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 22:38:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 22:38:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 22:38:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 22:38:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 22:39:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 22:39:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-10 22:43:57 --> Attempt to read property "obatcacing" on array
+in APPPATH\Views\kader\imun\detailimunanak.php on line 48.
+ 1 APPPATH\Views\kader\imun\detailimunanak.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "obatcacing" on array', 'APPPATH\\Views\\kader\\imun\\detailimunanak.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\imun\\detailimunanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/detailimunanak', [], true)
+ 5 APPPATH\Controllers\Imunisasi.php(166): view('kader/imun/detailimunanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->detailimunanak('3')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-10 22:45:07 --> Attempt to read property "obatcacing" on array
+in APPPATH\Views\kader\imun\detailimunanak.php on line 48.
+ 1 APPPATH\Views\kader\imun\detailimunanak.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "obatcacing" on array', 'APPPATH\\Views\\kader\\imun\\detailimunanak.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\imun\\detailimunanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/detailimunanak', [], true)
+ 5 APPPATH\Controllers\Imunisasi.php(166): view('kader/imun/detailimunanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->detailimunanak('3')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-10 22:45:09 --> Attempt to read property "obatcacing" on array
+in APPPATH\Views\kader\imun\detailimunanak.php on line 48.
+ 1 APPPATH\Views\kader\imun\detailimunanak.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "obatcacing" on array', 'APPPATH\\Views\\kader\\imun\\detailimunanak.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\imun\\detailimunanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/detailimunanak', [], true)
+ 5 APPPATH\Controllers\Imunisasi.php(166): view('kader/imun/detailimunanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->detailimunanak('3')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-10 22:45:11 --> Attempt to read property "obatcacing" on array
+in APPPATH\Views\kader\imun\detailimunanak.php on line 48.
+ 1 APPPATH\Views\kader\imun\detailimunanak.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "obatcacing" on array', 'APPPATH\\Views\\kader\\imun\\detailimunanak.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\imun\\detailimunanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/detailimunanak', [], true)
+ 5 APPPATH\Controllers\Imunisasi.php(166): view('kader/imun/detailimunanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->detailimunanak('3')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 22:48:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 22:48:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 22:50:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 22:50:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 22:53:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 22:53:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 22:53:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 22:53:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 22:53:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(5): dataAnakTopBar()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/imun/data...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(42): view('kader/imun/data...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 22:53:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anak`
+WHERE `idanak` NOT IN :idanak:', [...], false)
+ 5 APPPATH\Models\ImunisasiModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(46): App\Models\ImunisasiModel->dataAllAnak()
+ 7 APPPATH\Views\template\topbar.php(5): dataAnakTopBar()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/imun/dataimunanak', [], true)
+16 APPPATH\Controllers\Imunisasi.php(42): view('kader/imun/dataimunanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:20:26 --> mysqli_sql_exception: Unknown column 'b.anaknama' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`ana...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`ana...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`ana...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`ana...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tamb...', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(56): view('kader/anak/tamb...', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 23:20:26 --> Unknown column 'b.anaknama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= :notif.created_at:
+AND `notif`.`created_at` <= :notif.created_at.1:
+ LIMIT 5', [...], false)
+ 5 APPPATH\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+ 7 APPPATH\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+16 APPPATH\Controllers\Anak.php(56): view('kader/anak/tambahanak', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-10 23:22:05 --> Undefined property: stdClass::$anaknama
+in APPPATH\Views\kader\anak\dataanak.php on line 86.
+ 1 APPPATH\Views\kader\anak\dataanak.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$anaknama', 'APPPATH\\Views\\kader\\anak\\dataanak.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\dataanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/dataanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(40): view('kader/anak/dataanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:22:08 --> mysqli_sql_exception: Unknown column 'anak.anaknama' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.`...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.`...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.`...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.`...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AnakModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(313): App\Models\AnakModel->get_detail_anak('12')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->kmsanak('12')
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 23:22:08 --> Unknown column 'anak.anaknama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.`anaknama`, `penimbangan`.`bb`, MONTH(penimbangan.tgltimbang) AS bulan, YEAR(penimbangan.tgltimbang) AS tahun
+FROM `anak`
+LEFT JOIN `penimbangan` ON `anak`.`idanak` = `penimbangan`.`idanak`
+WHERE `penimbangan`.`idanak` = \'12\'
+ORDER BY `penimbangan`.`tgltimbang` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.`anaknama`, `penimbangan`.`bb`, MONTH(penimbangan.tgltimbang) AS bulan, YEAR(penimbangan.tgltimbang) AS tahun
+FROM `anak`
+LEFT JOIN `penimbangan` ON `anak`.`idanak` = `penimbangan`.`idanak`
+WHERE `penimbangan`.`idanak` = \'12\'
+ORDER BY `penimbangan`.`tgltimbang` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.`anaknama`, `penimbangan`.`bb`, MONTH(penimbangan.tgltimbang) AS bulan, YEAR(penimbangan.tgltimbang) AS tahun
+FROM `anak`
+LEFT JOIN `penimbangan` ON `anak`.`idanak` = `penimbangan`.`idanak`
+WHERE `penimbangan`.`idanak` = \'12\'
+ORDER BY `penimbangan`.`tgltimbang` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.`anaknama`, `penimbangan`.`bb`, MONTH(penimbangan.tgltimbang) AS bulan, YEAR(penimbangan.tgltimbang) AS tahun
+FROM `anak`
+LEFT JOIN `penimbangan` ON `anak`.`idanak` = `penimbangan`.`idanak`
+WHERE `penimbangan`.`idanak` = :penimbangan.idanak:
+ORDER BY `penimbangan`.`tgltimbang` ASC', [...], false)
+ 5 APPPATH\Models\AnakModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(313): App\Models\AnakModel->get_detail_anak('12')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->kmsanak('12')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:22:24 --> mysqli_sql_exception: Unknown column 'b.anaknama' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`ana...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`ana...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`ana...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`ana...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 23:22:24 --> Unknown column 'b.anaknama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= :notif.created_at:
+AND `notif`.`created_at` <= :notif.created_at.1:
+ LIMIT 5', [...], false)
+ 5 APPPATH\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+ 7 APPPATH\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:22:53 --> mysqli_sql_exception: Unknown column 'b.anaknama' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`ana...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`ana...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`ana...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`ana...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 23:22:53 --> Unknown column 'b.anaknama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= :notif.created_at:
+AND `notif`.`created_at` <= :notif.created_at.1:
+ LIMIT 5', [...], false)
+ 5 APPPATH\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+ 7 APPPATH\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:23:00 --> mysqli_sql_exception: Unknown column 'b.anaknama' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`ana...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`ana...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`ana...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`ana...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 23:23:00 --> Unknown column 'b.anaknama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= :notif.created_at:
+AND `notif`.`created_at` <= :notif.created_at.1:
+ LIMIT 5', [...], false)
+ 5 APPPATH\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+ 7 APPPATH\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:23:03 --> mysqli_sql_exception: Unknown column 'b.anaknama' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`ana...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`ana...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`ana...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`ana...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+#6 C:\xampp\htdocs\taposyandu\app\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+#7 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\taposyandu\system\View\View.php(429): CodeIgniter\View\View->render('template/topbar', NULL, true)
+#10 C:\xampp\htdocs\taposyandu\app\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+#11 C:\xampp\htdocs\taposyandu\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\taposyandu\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\taposyandu\system\View\View.php(229): CodeIgniter\View\View->render('template/index', Array, true)
+#14 C:\xampp\htdocs\taposyandu\system\Common.php(1137): CodeIgniter\View\View->render('dashboard', Array, true)
+#15 C:\xampp\htdocs\taposyandu\app\Controllers\Admin.php(72): view('dashboard', Array)
+#16 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Admin->index()
+#17 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#18 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#21 {main}
+CRITICAL - 2024-06-10 23:23:03 --> Unknown column 'b.anaknama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= \'2024-06-01 00:00:00\'
+AND `notif`.`created_at` <= \'2024-06-30 23:59:59\'
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`anaknama`, `c`.`namaImun`, `notif`.`idnotif`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `notif`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `notif`.`idJenImun` = `c`.`idJenImun`
+WHERE `notif`.`created_at` >= :notif.created_at:
+AND `notif`.`created_at` <= :notif.created_at.1:
+ LIMIT 5', [...], false)
+ 5 APPPATH\Models\NotifModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Helpers\usia_helper.php(90): App\Models\NotifModel->getNotifTop()
+ 7 APPPATH\Views\template\topbar.php(8): dataNotifAnakImunisasi()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\topbar.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/topbar', null, true)
+11 APPPATH\Views\template\index.php(143): CodeIgniter\View\View->include('template/topbar')
+12 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+13 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+15 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+16 APPPATH\Controllers\Admin.php(72): view('dashboard', [...])
+17 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+18 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:32:38 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama`, ...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, ...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, ...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, ...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AnakModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(51): App\Models\AnakModel->getAllData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 23:32:38 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama`, `email`
+FROM `anak`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, `email`
+FROM `anak`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, `email`
+FROM `anak`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, `email`
+FROM `anak`', [], false)
+ 5 APPPATH\Models\AnakModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(51): App\Models\AnakModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:32:50 --> mysqli_sql_exception: Unknown column 'fullname' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `fullnam...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fullnam...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fullnam...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `fullnam...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AnakModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(51): App\Models\AnakModel->getAllData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-10 23:32:50 --> Unknown column 'fullname' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `fullname`, `email`
+FROM `anak`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fullname`, `email`
+FROM `anak`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fullname`, `email`
+FROM `anak`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `fullname`, `email`
+FROM `anak`', [], false)
+ 5 APPPATH\Models\AnakModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(51): App\Models\AnakModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-10 23:33:33 --> Undefined property: stdClass::$ibunama
+in APPPATH\Views\kader\anak\tambahanak.php on line 214.
+ 1 APPPATH\Views\kader\anak\tambahanak.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ibunama', 'APPPATH\\Views\\kader\\anak\\tambahanak.php', 214)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\tambahanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(56): view('kader/anak/tambahanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-06-10 23:34:54 --> Undefined property: stdClass::$iduser
+in APPPATH\Views\kader\anak\tambahanak.php on line 260.
+ 1 APPPATH\Views\kader\anak\tambahanak.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$iduser', 'APPPATH\\Views\\kader\\anak\\tambahanak.php', 260)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\tambahanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(57): view('kader/anak/tambahanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-10 23:37:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(160): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-06-10 23:39:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(160): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}

@@ -1,0 +1,500 @@
+CRITICAL - 2023-06-18 22:10:48 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-18 22:15:31 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-18 22:15:58 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-18 22:20:21 --> mysqli_sql_exception: Unknown column 'anak.idanak' in 'field list' in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `imunisa...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `imunisa...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `imunisa...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `imunisa...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\app\Models\ImunisasiModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\www\rizkydharma\taposyandu\app\Controllers\Imunisasi.php(26): App\Models\ImunisasiModel->getAllData()
+#6 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+#7 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#11 {main}
+CRITICAL - 2023-06-18 22:20:21 --> Unknown column 'anak.idanak' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `imunisasi`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`tgllhr`, `anak`.`jk`, `bumil`.`idbumil`, `bumil`.`ibunama`
+FROM `imunisasi`
+LEFT JOIN `anak` ON `imunisasi`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `imunisasi`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `imunisasi`.`idimunisasi` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `imunisasi`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`tgllhr`, `anak`.`jk`, `bumil`.`idbumil`, `bumil`.`ibunama`
+FROM `imunisasi`
+LEFT JOIN `anak` ON `imunisasi`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `imunisasi`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `imunisasi`.`idimunisasi` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `imunisasi`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`tgllhr`, `anak`.`jk`, `bumil`.`idbumil`, `bumil`.`ibunama`
+FROM `imunisasi`
+LEFT JOIN `anak` ON `imunisasi`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `imunisasi`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `imunisasi`.`idimunisasi` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `imunisasi`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`tgllhr`, `anak`.`jk`, `bumil`.`idbumil`, `bumil`.`ibunama`
+FROM `imunisasi`
+LEFT JOIN `anak` ON `imunisasi`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `imunisasi`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `imunisasi`.`idimunisasi` DESC', [], false)
+ 5 APPPATH\Models\ImunisasiModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Imunisasi.php(26): App\Models\ImunisasiModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Imunisasi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-18 22:20:54 --> mysqli_sql_exception: Unknown column 'bumil.idbumil' in 'order clause' in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `bumil`....', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bumil`....')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bumil`....')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `bumil`....', Array, false)
+#4 D:\www\rizkydharma\taposyandu\app\Models\BumilModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\www\rizkydharma\taposyandu\app\Controllers\Bumil.php(33): App\Models\BumilModel->getAllData()
+#6 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->index()
+#7 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#11 {main}
+CRITICAL - 2023-06-18 22:20:54 --> Unknown column 'bumil.idbumil' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `bumil`.*
+FROM `bumil`
+ORDER BY `bumil`.`idbumil` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bumil`.*
+FROM `bumil`
+ORDER BY `bumil`.`idbumil` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bumil`.*
+FROM `bumil`
+ORDER BY `bumil`.`idbumil` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `bumil`.*
+FROM `bumil`
+ORDER BY `bumil`.`idbumil` DESC', [], false)
+ 5 APPPATH\Models\BumilModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bumil.php(33): App\Models\BumilModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-18 22:21:01 --> mysqli_sql_exception: Table 'project_taposyandu.penimbangan' doesn't exist in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimba...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimba...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimba...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimba...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\app\Models\PenimbanganModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(26): App\Models\PenimbanganModel->getAllData()
+#6 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->index()
+#7 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#11 {main}
+CRITICAL - 2023-06-18 22:21:01 --> Table 'project_taposyandu.penimbangan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC', [], false)
+ 5 APPPATH\Models\PenimbanganModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Penimbangan.php(26): App\Models\PenimbanganModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-18 22:21:15 --> mysqli_sql_exception: Table 'project_taposyandu.penimbangan' doesn't exist in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimba...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimba...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimba...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimba...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\app\Models\PenimbanganModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(26): App\Models\PenimbanganModel->getAllData()
+#6 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->index()
+#7 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#11 {main}
+CRITICAL - 2023-06-18 22:21:15 --> Table 'project_taposyandu.penimbangan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC', [], false)
+ 5 APPPATH\Models\PenimbanganModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Penimbangan.php(26): App\Models\PenimbanganModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-18 22:21:18 --> mysqli_sql_exception: Table 'project_taposyandu.penimbangan' doesn't exist in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimba...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimba...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimba...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimba...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\app\Models\PenimbanganModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(26): App\Models\PenimbanganModel->getAllData()
+#6 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->index()
+#7 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#11 {main}
+CRITICAL - 2023-06-18 22:21:18 --> Table 'project_taposyandu.penimbangan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC', [], false)
+ 5 APPPATH\Models\PenimbanganModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Penimbangan.php(26): App\Models\PenimbanganModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-18 22:21:29 --> mysqli_sql_exception: Table 'project_taposyandu.penimbangan' doesn't exist in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimba...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimba...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimba...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimba...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\app\Models\PenimbanganModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(26): App\Models\PenimbanganModel->getAllData()
+#6 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->index()
+#7 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#11 {main}
+CRITICAL - 2023-06-18 22:21:29 --> Table 'project_taposyandu.penimbangan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `penimbangan`.*, `anak`.`idanak`, `anak`.`anaknama`, `anak`.`jk`, `anak`.`tgllhr`, `bumil`.`idbumil`, `bumil`.`ibunama`, `bumil`.`ayahnama`
+FROM `penimbangan`
+LEFT JOIN `anak` ON `penimbangan`.`idanak` = `anak`.`idanak`
+LEFT JOIN `bumil` ON `penimbangan`.`idbumil` = `bumil`.`idbumil`
+ORDER BY `penimbangan`.`idpenimbangan` DESC', [], false)
+ 5 APPPATH\Models\PenimbanganModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Penimbangan.php(26): App\Models\PenimbanganModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-18 22:24:04 --> Too few arguments to function App\Controllers\Resetpass::index(), 0 passed in D:\www\rizkydharma\taposyandu\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Resetpass.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-18 22:24:13 --> Undefined array key "usernohp"
+in APPPATH\Views\profil\profil.php on line 86.
+ 1 APPPATH\Views\profil\profil.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usernohp"', 'APPPATH\\Views\\profil\\profil.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\profil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/profil', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profil->lihat('2')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-18 22:39:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(145): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:10:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:10:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:11:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:12:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:12:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:12:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:12:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:12:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:13:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:14:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}
+ERROR - 2023-06-18 23:14:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project_taposyandu`.`penimbangan`, CONSTRAINT `kembang_anak` FOREIGN KEY (`idanak`) REFERENCES `anak` (`idanak`)) in D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\www\rizkydharma\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\www\rizkydharma\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\www\rizkydharma\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\www\rizkydharma\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\www\rizkydharma\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\www\rizkydharma\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\www\rizkydharma\taposyandu\app\Controllers\Penimbangan.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(898): App\Controllers\Penimbangan->save()
+#9 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+#10 D:\www\rizkydharma\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\www\rizkydharma\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\www\rizkydharma\taposyandu\system\Commands\Server\rewrite.php(43): require_once('D:\\www\\rizkydha...')
+#13 {main}

@@ -1,0 +1,562 @@
+CRITICAL - 2024-05-05 00:23:25 --> Undefined variable $bumil
+in APPPATH\Views\kader\timbang\detailpenimbanganak.php on line 62.
+ 1 APPPATH\Views\kader\timbang\detailpenimbanganak.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bumil', 'APPPATH\\Views\\kader\\timbang\\detailpenimbanganak.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\timbang\\detailpenimbanganak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/timbang/detailpenimbanganak', [], true)
+ 5 APPPATH\Controllers\Penimbangan.php(174): view('kader/timbang/detailpenimbanganak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->detailpenimbanganak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 00:25:34 --> Undefined variable $bumil
+in APPPATH\Views\kader\timbang\detailpenimbanganak.php on line 62.
+ 1 APPPATH\Views\kader\timbang\detailpenimbanganak.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bumil', 'APPPATH\\Views\\kader\\timbang\\detailpenimbanganak.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\timbang\\detailpenimbanganak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/timbang/detailpenimbanganak', [], true)
+ 5 APPPATH\Controllers\Penimbangan.php(174): view('kader/timbang/detailpenimbanganak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->detailpenimbanganak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-05-05 00:34:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`posyandu`.`absenbumil`, CONSTRAINT `agenda_absen` FOREIGN KEY (`idagenda`) REFERENCES `agenda` (`idagenda`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ag...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ag...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ag...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ag...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\taposyandu\app\Controllers\Agenda.php(204): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Agenda->hapusagenda('5')
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-05-05 00:34:33 --> Cannot delete or update a parent row: a foreign key constraint fails (`posyandu`.`absenbumil`, CONSTRAINT `agenda_absen` FOREIGN KEY (`idagenda`) REFERENCES `agenda` (`idagenda`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `agenda`
+WHERE `idagenda` IN :idagenda:', [...], false)
+ 5 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Agenda.php(204): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Agenda->hapusagenda('5')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-05-05 00:36:03 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`posyandu`.`absenbumil`, CONSTRAINT `agenda_absen` FOREIGN KEY (`idagenda`) REFERENCES `agenda` (`idagenda`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ag...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ag...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ag...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ag...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\taposyandu\app\Controllers\Agenda.php(204): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Agenda->hapusagenda('5')
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-05-05 00:36:03 --> Cannot delete or update a parent row: a foreign key constraint fails (`posyandu`.`absenbumil`, CONSTRAINT `agenda_absen` FOREIGN KEY (`idagenda`) REFERENCES `agenda` (`idagenda`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `agenda`
+WHERE `idagenda` IN :idagenda:', [...], false)
+ 5 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Agenda.php(204): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Agenda->hapusagenda('5')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-05-05 00:40:28 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`posyandu`.`absenbumil`, CONSTRAINT `agenda_absen` FOREIGN KEY (`idagenda`) REFERENCES `agenda` (`idagenda`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ag...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ag...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ag...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ag...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\taposyandu\app\Controllers\Agenda.php(204): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Agenda->hapusagenda('4')
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-05-05 00:40:28 --> Cannot delete or update a parent row: a foreign key constraint fails (`posyandu`.`absenbumil`, CONSTRAINT `agenda_absen` FOREIGN KEY (`idagenda`) REFERENCES `agenda` (`idagenda`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `agenda`
+WHERE `idagenda` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `agenda`
+WHERE `idagenda` IN :idagenda:', [...], false)
+ 5 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Agenda.php(204): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Agenda->hapusagenda('4')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 01:14:23 --> Undefined variable $bumil
+in APPPATH\Views\kader\anak\detailanak.php on line 65.
+ 1 APPPATH\Views\kader\anak\detailanak.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bumil', 'APPPATH\\Views\\kader\\anak\\detailanak.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\detailanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/detailanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(173): view('kader/anak/detailanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->detailanak('9')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 02:20:19 --> Class "App\Controllers\BidanModel" not found
+in APPPATH\Controllers\Notif.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\Notif->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 02:20:45 --> Call to undefined method App\Models\NotifModel::getNotif
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Notif.php(34): CodeIgniter\Model->__call('getNotif', [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 02:43:01 --> Undefined variable $dan
+in APPPATH\Views\admin\notif\datanotif.php on line 73.
+ 1 APPPATH\Views\admin\notif\datanotif.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dan', 'APPPATH\\Views\\admin\\notif\\datanotif.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notif\\datanotif.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 5 APPPATH\Controllers\Notif.php(38): view('admin/notif/datanotif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 02:43:21 --> Undefined variable $dan
+in APPPATH\Views\admin\notif\datanotif.php on line 73.
+ 1 APPPATH\Views\admin\notif\datanotif.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dan', 'APPPATH\\Views\\admin\\notif\\datanotif.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notif\\datanotif.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 5 APPPATH\Controllers\Notif.php(38): view('admin/notif/datanotif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 02:44:13 --> Undefined variable $dan
+in APPPATH\Views\admin\notif\datanotif.php on line 75.
+ 1 APPPATH\Views\admin\notif\datanotif.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dan', 'APPPATH\\Views\\admin\\notif\\datanotif.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notif\\datanotif.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 5 APPPATH\Controllers\Notif.php(38): view('admin/notif/datanotif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 02:48:17 --> Call to undefined method App\Models\NotifModel::getNotif
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Notif.php(34): CodeIgniter\Model->__call('getNotif', [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-05-05 02:50:30 --> mysqli_sql_exception: Unknown column 'a.idanak' in 'on clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`ana...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`ana...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`ana...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`ana...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\NotifModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Notif.php(34): App\Models\NotifModel->getNotif()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Notif->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-05-05 02:50:30 --> Unknown column 'a.idanak' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `a`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `a`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `a`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `a`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`', [], false)
+ 5 APPPATH\Models\NotifModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Notif.php(34): App\Models\NotifModel->getNotif()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-05-05 02:53:02 --> mysqli_sql_exception: Unknown column 'b.anaknama' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`ana...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`ana...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`ana...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`ana...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\NotifModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Notif.php(34): App\Models\NotifModel->getNotif()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Notif->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-05-05 02:53:02 --> Unknown column 'b.anaknama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+JOIN `notif` `a` ON `anak``b`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+JOIN `notif` `a` ON `anak``b`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+JOIN `notif` `a` ON `anak``b`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+JOIN `notif` `a` ON `anak``b`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`', [], false)
+ 5 APPPATH\Models\NotifModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Notif.php(34): App\Models\NotifModel->getNotif()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-05-05 02:55:36 --> mysqli_sql_exception: Unknown column 'a.idanak' in 'on clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`ana...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`ana...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`ana...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`ana...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\NotifModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Notif.php(34): App\Models\NotifModel->getNotif()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Notif->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-05-05 02:55:36 --> Unknown column 'a.idanak' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `a`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `a`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `a`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`anaknama`, `c`.`namaImun`
+FROM `notif`
+LEFT JOIN `anak` `b` ON `a`.`idanak` = `b`.`idanak`
+LEFT JOIN `jenisImun` `c` ON `a`.`idJenImun` = `c`.`idJenImun`', [], false)
+ 5 APPPATH\Models\NotifModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Notif.php(34): App\Models\NotifModel->getNotif()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 02:56:16 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\notif\datanotif.php on line 71.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 4 APPPATH\Controllers\Notif.php(38): view('admin/notif/datanotif', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 02:58:42 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\notif\datanotif.php on line 71.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 4 APPPATH\Controllers\Notif.php(38): view('admin/notif/datanotif', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:00:46 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\notif\datanotif.php on line 74.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 4 APPPATH\Controllers\Notif.php(38): view('admin/notif/datanotif', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:02:23 --> Undefined property: stdClass::$idnotif
+in APPPATH\Views\admin\notif\datanotif.php on line 74.
+ 1 APPPATH\Views\admin\notif\datanotif.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idnotif', 'APPPATH\\Views\\admin\\notif\\datanotif.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notif\\datanotif.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 5 APPPATH\Controllers\Notif.php(38): view('admin/notif/datanotif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:04:40 --> Undefined property: stdClass::$idnotif
+in APPPATH\Views\admin\notif\datanotif.php on line 74.
+ 1 APPPATH\Views\admin\notif\datanotif.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idnotif', 'APPPATH\\Views\\admin\\notif\\datanotif.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notif\\datanotif.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 5 APPPATH\Controllers\Notif.php(38): view('admin/notif/datanotif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:31:38 --> Class "App\Controllers\AnakModel" not found
+in APPPATH\Controllers\Notif.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:32:59 --> Class "App\Controllers\AnakModel" not found
+in APPPATH\Controllers\Notif.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:34:54 --> Undefined variable $anak
+in APPPATH\Controllers\Notif.php on line 46.
+ 1 APPPATH\Controllers\Notif.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anak', 'APPPATH\\Controllers\\Notif.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:35:38 --> Undefined property: App\Controllers\Notif::$anakModel
+in APPPATH\Controllers\Notif.php on line 46.
+ 1 APPPATH\Controllers\Notif.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Notif::$anakModel', 'APPPATH\\Controllers\\Notif.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:37:44 --> Undefined variable $jenisimun
+in APPPATH\Controllers\Notif.php on line 48.
+ 1 APPPATH\Controllers\Notif.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisimun', 'APPPATH\\Controllers\\Notif.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:38:07 --> Call to undefined method App\Models\NotifModel::getAllData
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Notif.php(49): CodeIgniter\Model->__call('getAllData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:38:54 --> Undefined variable $jenisimun
+in APPPATH\Views\admin\notif\tambahnotif.php on line 67.
+ 1 APPPATH\Views\admin\notif\tambahnotif.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisimun', 'APPPATH\\Views\\admin\\notif\\tambahnotif.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notif\\tambahnotif.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/tambahnotif', [], true)
+ 5 APPPATH\Controllers\Notif.php(54): view('admin/notif/tambahnotif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 03:39:35 --> Undefined variable $jenisimun
+in APPPATH\Views\admin\notif\tambahnotif.php on line 67.
+ 1 APPPATH\Views\admin\notif\tambahnotif.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisimun', 'APPPATH\\Views\\admin\\notif\\tambahnotif.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notif\\tambahnotif.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/tambahnotif', [], true)
+ 5 APPPATH\Controllers\Notif.php(54): view('admin/notif/tambahnotif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:46:35 --> Undefined variable $bumil
+in APPPATH\Views\kader\anak\detailanak.php on line 65.
+ 1 APPPATH\Views\kader\anak\detailanak.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bumil', 'APPPATH\\Views\\kader\\anak\\detailanak.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\detailanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/detailanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(173): view('kader/anak/detailanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->detailanak('9')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:48:50 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:49:24 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:51:02 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:53:06 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:54:36 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:54:45 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:55:22 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:56:10 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:58:42 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 04:59:26 --> Invalid file: admin/notif/datanotif.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/notif/datanotif.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/datanotif', [], true)
+ 3 APPPATH\Controllers\Notif.php(39): view('admin/notif/datanotif', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-05 05:03:38 --> Undefined variable $currentPage
+in APPPATH\Views\admin\notif\tambahnotif.php on line 129.
+ 1 APPPATH\Views\admin\notif\tambahnotif.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\admin\\notif\\tambahnotif.php', 129)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notif\\tambahnotif.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notif/tambahnotif', [], true)
+ 5 APPPATH\Controllers\Notif.php(54): view('admin/notif/tambahnotif', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Notif->tambahnotif()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

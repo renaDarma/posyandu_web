@@ -1,0 +1,48 @@
+CRITICAL - 2023-06-15 06:39:54 --> Call to undefined method App\Models\PenimbanganModel::grtIdBumil
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Penimbangan.php(161): CodeIgniter\Model->__call('grtIdBumil', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->detailpenimbanganak('5')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-15 06:46:02 --> Cannot use object of type stdClass as array
+in APPPATH\Views\kader\editpenimbanganak.php on line 82.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/editpenimbanganak', [], true)
+ 4 APPPATH\Controllers\Penimbangan.php(180): view('kader/editpenimbanganak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->editpenimbanganak('5')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-15 06:47:14 --> Cannot use object of type stdClass as array
+in APPPATH\Views\kader\editpenimbanganak.php on line 82.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/editpenimbanganak', [], true)
+ 4 APPPATH\Controllers\Penimbangan.php(176): view('kader/editpenimbanganak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->editpenimbanganak('5')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-15 06:47:37 --> Cannot use object of type stdClass as array
+in APPPATH\Views\kader\editpenimbanganak.php on line 82.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/editpenimbanganak', [], true)
+ 4 APPPATH\Controllers\Penimbangan.php(176): view('kader/editpenimbanganak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Penimbangan->editpenimbanganak('5')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penimbangan))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-15 07:14:20 --> Too few arguments to function App\Controllers\Resetpass::index(), 0 passed in C:\xampp\htdocs\taposyandu\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Resetpass.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

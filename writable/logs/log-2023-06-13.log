@@ -1,0 +1,254 @@
+CRITICAL - 2023-06-13 01:18:40 --> Attempt to read property "fullname" on null
+in APPPATH\Views\template\index.php on line 54.
+ 1 APPPATH\Views\template\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on null', 'APPPATH\\Views\\template\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(20): view('dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-13 01:45:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`taposyandu`.`imunisasi`, CONSTRAINT `imun_bumil` FOREIGN KEY (`idbumil`) REFERENCES `bumil` (`idbumil`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `im...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `im...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `im...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `im...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Imunisasi.php(95): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Imunisasi->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Imunisasi))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-13 01:56:46 --> Unsupported operand types: string / string
+in APPPATH\Controllers\Laporankomdat.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Laporankomdat->save()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporankomdat))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 03:16:19 --> Undefined array key "password"
+in APPPATH\Views\profil\profil.php on line 68.
+ 1 APPPATH\Views\profil\profil.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Views\\profil\\profil.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\profil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/profil', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profil->lihat('2')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 03:17:42 --> Undefined array key "password"
+in APPPATH\Views\profil\profil.php on line 68.
+ 1 APPPATH\Views\profil\profil.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Views\\profil\\profil.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\profil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/profil', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profil->lihat('2')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 03:24:25 --> Undefined array key "password"
+in APPPATH\Views\profil\profil.php on line 68.
+ 1 APPPATH\Views\profil\profil.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Views\\profil\\profil.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\profil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/profil', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profil->lihat('2')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 04:06:24 --> Undefined variable $title
+in APPPATH\Views\template\index.php on line 10.
+ 1 APPPATH\Views\template\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/resetpass', [], true)
+ 6 APPPATH\Controllers\Resetpass.php(9): view('profil/resetpass')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 04:41:40 --> Undefined variable $title
+in APPPATH\Views\template\index.php on line 10.
+ 1 APPPATH\Views\template\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('masyarakat/index', [], true)
+ 6 APPPATH\Controllers\Masyarakat.php(20): view('masyarakat/index')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 04:55:04 --> Myth\Auth\Models\UserModel::logResetAttempt(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\taposyandu\vendor\myth\auth\src\Controllers\AuthController.php on line 294
+in VENDORPATH\myth\auth\src\Models\UserModel.php on line 44.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(294): Myth\Auth\Models\UserModel->logResetAttempt(null, null, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36')
+ 2 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptReset()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 04:56:47 --> Myth\Auth\Models\UserModel::logResetAttempt(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\taposyandu\vendor\myth\auth\src\Controllers\AuthController.php on line 294
+in VENDORPATH\myth\auth\src\Models\UserModel.php on line 44.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(294): Myth\Auth\Models\UserModel->logResetAttempt(null, null, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36')
+ 2 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptReset()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 05:03:07 --> Undefined variable $profil
+in APPPATH\Views\profil\resetpass.php on line 46.
+ 1 APPPATH\Views\profil\resetpass.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'APPPATH\\Views\\profil\\resetpass.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profil\\resetpass.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profil/resetpass', [], true)
+ 5 APPPATH\Controllers\Resetpass.php(12): view('profil/resetpass', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 05:03:45 --> Myth\Auth\Models\UserModel::logResetAttempt(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\taposyandu\vendor\myth\auth\src\Controllers\AuthController.php on line 294
+in VENDORPATH\myth\auth\src\Models\UserModel.php on line 44.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(294): Myth\Auth\Models\UserModel->logResetAttempt(null, null, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36')
+ 2 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptReset()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 05:53:46 --> Undefined variable $title
+in APPPATH\Views\template\index.php on line 10.
+ 1 APPPATH\Views\template\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('masyarakat/index', [], true)
+ 6 APPPATH\Controllers\Masyarakat.php(20): view('masyarakat/index')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Masyarakat->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 06:39:05 --> Object of class Myth\Auth\Models\UserModel could not be converted to string
+in APPPATH\Controllers\Resetpass.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 07:21:37 --> Object of class Myth\Auth\Models\UserModel could not be converted to string
+in APPPATH\Controllers\Resetpass.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Resetpass->index('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resetpass))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-13 07:27:48 --> Myth\Auth\Models\UserModel::logResetAttempt(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\taposyandu\vendor\myth\auth\src\Controllers\AuthController.php on line 294
+in VENDORPATH\myth\auth\src\Models\UserModel.php on line 44.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(294): Myth\Auth\Models\UserModel->logResetAttempt(null, null, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36')
+ 2 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptReset()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-13 20:50:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`taposyandu`.`kb`, CONSTRAINT `kb_bumil` FOREIGN KEY (`idbumil`) REFERENCES `bumil` (`idbumil`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `kb...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kb...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kb...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kb...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Kb.php(76): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Kb->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kb))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-06-13 20:50:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`taposyandu`.`kb`, CONSTRAINT `kb_bumil` FOREIGN KEY (`idbumil`) REFERENCES `bumil` (`idbumil`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `kb...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kb...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kb...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kb...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Kb.php(76): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Kb->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kb))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-06-13 20:50:31 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`taposyandu`.`kb`, CONSTRAINT `kb_bumil` FOREIGN KEY (`idbumil`) REFERENCES `bumil` (`idbumil`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `kb...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kb...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kb...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kb...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Kb.php(76): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Kb->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kb))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-06-13 22:08:48 --> mysqli_sql_exception: Duplicate entry '350610210411001' for key 'username' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` ...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\taposyandu\system\BaseModel.php(656): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\taposyandu\app\Controllers\Profil.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Profil->edit_promas()
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#11 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-06-13 22:08:48 --> Duplicate entry '350610210411001' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` SET `email` = \'ariyulianik@gmail.com\', `username` = \'350610210411001\', `fullname` = \'Ari Yulianik Dwi Rahayu\', `usernohp` = \'0834123232200\', `updated_at` = \'2023-06-13 22:08:48\'
+WHERE `users`.`id` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `email` = \'ariyulianik@gmail.com\', `username` = \'350610210411001\', `fullname` = \'Ari Yulianik Dwi Rahayu\', `usernohp` = \'0834123232200\', `updated_at` = \'2023-06-13 22:08:48\'
+WHERE `users`.`id` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `email` = \'ariyulianik@gmail.com\', `username` = \'350610210411001\', `fullname` = \'Ari Yulianik Dwi Rahayu\', `usernohp` = \'0834123232200\', `updated_at` = \'2023-06-13 22:08:48\'
+WHERE `users`.`id` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `email` = :email:, `username` = :username:, `fullname` = :fullname:, `usernohp` = :usernohp:, `updated_at` = :updated_at:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->update('4', [...])
+ 9 APPPATH\Controllers\Profil.php(64): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Profil->edit_promas()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

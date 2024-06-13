@@ -1,0 +1,24 @@
+CRITICAL - 2024-03-19 03:20:44 --> Undefined variable $currentPage
+in APPPATH\Views\kader\anak\tambahanak.php on line 193.
+ 1 APPPATH\Views\kader\anak\tambahanak.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\kader\\anak\\tambahanak.php', 193)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\tambahanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(53): view('kader/anak/tambahanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-19 03:21:20 --> Undefined variable $currentPage
+in APPPATH\Views\kader\anak\tambahanak.php on line 193.
+ 1 APPPATH\Views\kader\anak\tambahanak.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\kader\\anak\\tambahanak.php', 193)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\anak\\tambahanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/anak/tambahanak', [], true)
+ 5 APPPATH\Controllers\Anak.php(53): view('kader/anak/tambahanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->tambahanak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

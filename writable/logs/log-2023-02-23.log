@@ -1,0 +1,432 @@
+CRITICAL - 2023-02-23 06:27:54 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('editposyandu/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 08:50:13 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Helpers\filesystem_helper.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-02-23 08:58:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`taposyandu`.`bumil`, CONSTRAINT `bumil_keluarga` FOREIGN KEY (`idkeluarga`) REFERENCES `keluarga` (`idkeluarga`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\taposyandu\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(98): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#11 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-02-23 08:58:48 --> Cannot add or update a child row: a foreign key constraint fails (`taposyandu`.`bumil`, CONSTRAINT `bumil_keluarga` FOREIGN KEY (`idkeluarga`) REFERENCES `keluarga` (`idkeluarga`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `created_at`, `updated_at`) VALUES (\'084163232343\', \'07352342\', \'3\', \'2023-02-23 08:58:47\', \'2023-02-23 08:58:47\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `created_at`, `updated_at`) VALUES (\'084163232343\', \'07352342\', \'3\', \'2023-02-23 08:58:47\', \'2023-02-23 08:58:47\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `created_at`, `updated_at`) VALUES (\'084163232343\', \'07352342\', \'3\', \'2023-02-23 08:58:47\', \'2023-02-23 08:58:47\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `created_at`, `updated_at`) VALUES (:bumilnohp:, :suaminohp:, :anakke:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Bumil.php(98): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->save()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 09:01:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`taposyandu`.`bumil`, CONSTRAINT `bumil_keluarga` FOREIGN KEY (`idkeluarga`) REFERENCES `keluarga` (`idkeluarga`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\taposyandu\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(98): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#11 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-02-23 09:01:26 --> Cannot add or update a child row: a foreign key constraint fails (`taposyandu`.`bumil`, CONSTRAINT `bumil_keluarga` FOREIGN KEY (`idkeluarga`) REFERENCES `keluarga` (`idkeluarga`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `created_at`, `updated_at`) VALUES (\'084163232343\', \'07352342\', \'3\', \'2023-02-23 09:01:26\', \'2023-02-23 09:01:26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `created_at`, `updated_at`) VALUES (\'084163232343\', \'07352342\', \'3\', \'2023-02-23 09:01:26\', \'2023-02-23 09:01:26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `created_at`, `updated_at`) VALUES (\'084163232343\', \'07352342\', \'3\', \'2023-02-23 09:01:26\', \'2023-02-23 09:01:26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `created_at`, `updated_at`) VALUES (:bumilnohp:, :suaminohp:, :anakke:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Bumil.php(98): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->save()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 09:07:23 --> mysqli_sql_exception: Column 'idkeluarga' cannot be null in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\taposyandu\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(98): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#11 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-02-23 09:07:23 --> Column 'idkeluarga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `idkeluarga`, `created_at`, `updated_at`) VALUES (\'08463242\', \'085463242\', \'11\', NULL, \'2023-02-23 09:07:22\', \'2023-02-23 09:07:22\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `idkeluarga`, `created_at`, `updated_at`) VALUES (\'08463242\', \'085463242\', \'11\', NULL, \'2023-02-23 09:07:22\', \'2023-02-23 09:07:22\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `idkeluarga`, `created_at`, `updated_at`) VALUES (\'08463242\', \'085463242\', \'11\', NULL, \'2023-02-23 09:07:22\', \'2023-02-23 09:07:22\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bumil` (`bumilnohp`, `suaminohp`, `anakke`, `idkeluarga`, `created_at`, `updated_at`) VALUES (:bumilnohp:, :suaminohp:, :anakke:, :idkeluarga:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Bumil.php(98): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->save()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 09:23:53 --> Undefined property: stdClass::$ibunama
+in APPPATH\Views\kader\databumil.php on line 76.
+ 1 APPPATH\Views\kader\databumil.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ibunama', 'APPPATH\\Views\\kader\\databumil.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\databumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/databumil', [], true)
+ 5 APPPATH\Controllers\Bumil.php(38): view('kader/databumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 09:23:54 --> Undefined property: stdClass::$ibunama
+in APPPATH\Views\kader\databumil.php on line 76.
+ 1 APPPATH\Views\kader\databumil.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ibunama', 'APPPATH\\Views\\kader\\databumil.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\databumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/databumil', [], true)
+ 5 APPPATH\Controllers\Bumil.php(38): view('kader/databumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 09:28:09 --> mysqli_sql_exception: Column 'idkeluarga' in field list is ambiguous in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idbumil...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idbumil...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idbumil...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idbumil...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\BumilModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(46): App\Models\BumilModel->getAllData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->tambahbumil()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-23 09:28:09 --> Column 'idkeluarga' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idbumil`, `idkeluarga`, `keluarga`.`ibunama`, `keluarga`.`ayahnama`, `bumilnohp`, `suaminohp`, `keluarga`.`alamat`, `anakke`
+FROM `bumil`
+JOIN `keluarga` ON `bumil`.`idkeluarga`=`keluarga`.`idkeluarga`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idbumil`, `idkeluarga`, `keluarga`.`ibunama`, `keluarga`.`ayahnama`, `bumilnohp`, `suaminohp`, `keluarga`.`alamat`, `anakke`
+FROM `bumil`
+JOIN `keluarga` ON `bumil`.`idkeluarga`=`keluarga`.`idkeluarga`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idbumil`, `idkeluarga`, `keluarga`.`ibunama`, `keluarga`.`ayahnama`, `bumilnohp`, `suaminohp`, `keluarga`.`alamat`, `anakke`
+FROM `bumil`
+JOIN `keluarga` ON `bumil`.`idkeluarga`=`keluarga`.`idkeluarga`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idbumil`, `idkeluarga`, `keluarga`.`ibunama`, `keluarga`.`ayahnama`, `bumilnohp`, `suaminohp`, `keluarga`.`alamat`, `anakke`
+FROM `bumil`
+JOIN `keluarga` ON `bumil`.`idkeluarga`=`keluarga`.`idkeluarga`', [], false)
+ 5 APPPATH\Models\BumilModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bumil.php(46): App\Models\BumilModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->tambahbumil()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 09:50:24 --> mysqli_sql_exception: Column 'idkeluarga' cannot be null in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-02-23 09:55:57 --> mysqli_sql_exception: Column 'idkeluarga' cannot be null in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-02-23 10:06:31 --> mysqli_sql_exception: Column 'idkeluarga' cannot be null in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-02-23 10:07:38 --> mysqli_sql_exception: Column 'idkeluarga' cannot be null in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-02-23 10:08:55 --> mysqli_sql_exception: Unknown column 'keluargga.idkeluarga' in 'field list' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idbumil...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idbumil...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idbumil...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idbumil...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\BumilModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(47): App\Models\BumilModel->getAllData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->tambahbumil()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-23 10:08:55 --> Unknown column 'keluargga.idkeluarga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idbumil`, `keluargga`.`idkeluarga` `bumilnohp`, `suaminohp`, `keluarga`.`alamat`, `anakke`
+FROM `bumil`
+JOIN `keluarga` ON `bumil`.`idkeluarga`=`keluarga`.`idkeluarga`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idbumil`, `keluargga`.`idkeluarga` `bumilnohp`, `suaminohp`, `keluarga`.`alamat`, `anakke`
+FROM `bumil`
+JOIN `keluarga` ON `bumil`.`idkeluarga`=`keluarga`.`idkeluarga`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idbumil`, `keluargga`.`idkeluarga` `bumilnohp`, `suaminohp`, `keluarga`.`alamat`, `anakke`
+FROM `bumil`
+JOIN `keluarga` ON `bumil`.`idkeluarga`=`keluarga`.`idkeluarga`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idbumil`, `keluargga`.`idkeluarga` `bumilnohp`, `suaminohp`, `keluarga`.`alamat`, `anakke`
+FROM `bumil`
+JOIN `keluarga` ON `bumil`.`idkeluarga`=`keluarga`.`idkeluarga`', [], false)
+ 5 APPPATH\Models\BumilModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bumil.php(47): App\Models\BumilModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->tambahbumil()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 10:09:23 --> mysqli_sql_exception: Column 'idkeluarga' cannot be null in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-02-23 10:09:27 --> mysqli_sql_exception: Column 'idkeluarga' cannot be null in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2023-02-23 10:16:30 --> mysqli_sql_exception: Column 'idkeluarga' cannot be null in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\taposyandu\app\Controllers\Bumil.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Bumil->save()
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-02-23 21:26:27 --> Undefined property: stdClass::$ibunama
+in APPPATH\Views\kader\databumil.php on line 76.
+ 1 APPPATH\Views\kader\databumil.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ibunama', 'APPPATH\\Views\\kader\\databumil.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\databumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/databumil', [], true)
+ 5 APPPATH\Controllers\Bumil.php(37): view('kader/databumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 21:30:02 --> mysqli_sql_exception: Column 'idkegiatan' in field list is ambiguous in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idkegia...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idkegia...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idkegia...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idkegia...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\KegiatanModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Kegiatan.php(31): App\Models\KegiatanModel->getData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Kegiatan->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-23 21:30:02 --> Column 'idkegiatan' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idkegiatan`, `kegiatan`, `kategori`, `tgl`, `waktu`, `alamat`
+FROM `kegiatan`
+JOIN `posyandu` ON `kegiatan`.`idposyandu`=`posyandu`.`idposyandu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idkegiatan`, `kegiatan`, `kategori`, `tgl`, `waktu`, `alamat`
+FROM `kegiatan`
+JOIN `posyandu` ON `kegiatan`.`idposyandu`=`posyandu`.`idposyandu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idkegiatan`, `kegiatan`, `kategori`, `tgl`, `waktu`, `alamat`
+FROM `kegiatan`
+JOIN `posyandu` ON `kegiatan`.`idposyandu`=`posyandu`.`idposyandu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idkegiatan`, `kegiatan`, `kategori`, `tgl`, `waktu`, `alamat`
+FROM `kegiatan`
+JOIN `posyandu` ON `kegiatan`.`idposyandu`=`posyandu`.`idposyandu`', [], false)
+ 5 APPPATH\Models\KegiatanModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kegiatan.php(31): App\Models\KegiatanModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kegiatan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 21:30:23 --> mysqli_sql_exception: Column 'idkeluarga' in field list is ambiguous in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idkb`, ...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idkb`, ...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idkb`, ...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idkb`, ...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\KbModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Kb.php(33): App\Models\KbModel->getAllData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Kb->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kb))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-23 21:30:23 --> Column 'idkeluarga' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idkb`, `idkeluarga`, `tgl`, `jeniskb`, `nohp`, `ayahnama`, `ibunama`, `alamat`
+FROM `kb`
+JOIN `keluarga` ON `kb`.`idkeluarga`=`keluarga`.`idkeluarga`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idkb`, `idkeluarga`, `tgl`, `jeniskb`, `nohp`, `ayahnama`, `ibunama`, `alamat`
+FROM `kb`
+JOIN `keluarga` ON `kb`.`idkeluarga`=`keluarga`.`idkeluarga`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idkb`, `idkeluarga`, `tgl`, `jeniskb`, `nohp`, `ayahnama`, `ibunama`, `alamat`
+FROM `kb`
+JOIN `keluarga` ON `kb`.`idkeluarga`=`keluarga`.`idkeluarga`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idkb`, `idkeluarga`, `tgl`, `jeniskb`, `nohp`, `ayahnama`, `ibunama`, `alamat`
+FROM `kb`
+JOIN `keluarga` ON `kb`.`idkeluarga`=`keluarga`.`idkeluarga`', [], false)
+ 5 APPPATH\Models\KbModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kb.php(33): App\Models\KbModel->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kb->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kb))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 21:33:17 --> mysqli_sql_exception: Column 'idkegiatan' in field list is ambiguous in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idkegia...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idkegia...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idkegia...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idkegia...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\KegiatanModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Kegiatan.php(31): App\Models\KegiatanModel->getData()
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Kegiatan->index()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-23 21:33:17 --> Column 'idkegiatan' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `idkegiatan`, `kegiatan`, `kategori`, `tgl`, `waktu`, `alamat`
+FROM `kegiatan`
+JOIN `posyandu` ON `kegiatan`.`idposyandu`=`posyandu`.`idposyandu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idkegiatan`, `kegiatan`, `kategori`, `tgl`, `waktu`, `alamat`
+FROM `kegiatan`
+JOIN `posyandu` ON `kegiatan`.`idposyandu`=`posyandu`.`idposyandu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idkegiatan`, `kegiatan`, `kategori`, `tgl`, `waktu`, `alamat`
+FROM `kegiatan`
+JOIN `posyandu` ON `kegiatan`.`idposyandu`=`posyandu`.`idposyandu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `idkegiatan`, `kegiatan`, `kategori`, `tgl`, `waktu`, `alamat`
+FROM `kegiatan`
+JOIN `posyandu` ON `kegiatan`.`idposyandu`=`posyandu`.`idposyandu`', [], false)
+ 5 APPPATH\Models\KegiatanModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kegiatan.php(31): App\Models\KegiatanModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kegiatan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

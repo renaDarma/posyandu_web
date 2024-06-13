@@ -1,0 +1,47 @@
+ERROR - 2023-05-10 22:23:15 --> mysqli_sql_exception: Not unique table/alias: 'anak' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.*...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.*...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.*...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.*...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\app\Models\AnakModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(163): App\Models\AnakModel->getBumil('4')
+#6 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->detailanak('4')
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-10 22:23:15 --> Not unique table/alias: 'anak'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `anak`.*, `bumil`.`ayahnama`, `bumil`.`ibunama`
+FROM `anak`
+LEFT JOIN `anak` ON `anak`.`idanak` = `anak`.`idanak`
+ORDER BY `bumil`.`idbumil` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anak`.*, `bumil`.`ayahnama`, `bumil`.`ibunama`
+FROM `anak`
+LEFT JOIN `anak` ON `anak`.`idanak` = `anak`.`idanak`
+ORDER BY `bumil`.`idbumil` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anak`.*, `bumil`.`ayahnama`, `bumil`.`ibunama`
+FROM `anak`
+LEFT JOIN `anak` ON `anak`.`idanak` = `anak`.`idanak`
+ORDER BY `bumil`.`idbumil` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `anak`.*, `bumil`.`ayahnama`, `bumil`.`ibunama`
+FROM `anak`
+LEFT JOIN `anak` ON `anak`.`idanak` = `anak`.`idanak`
+ORDER BY `bumil`.`idbumil` DESC', [], false)
+ 5 APPPATH\Models\AnakModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anak.php(163): App\Models\AnakModel->getBumil('4')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->detailanak('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 22:32:34 --> Call to undefined method App\Models\AnakModel::getBumil
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Anak.php(163): CodeIgniter\Model->__call('getBumil', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->detailanak('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

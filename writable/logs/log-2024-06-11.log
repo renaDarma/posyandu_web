@@ -1,0 +1,148 @@
+ERROR - 2024-06-11 02:07:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `anak` S...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `anak` S...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `anak` S...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `anak` S...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\taposyandu\system\BaseModel.php(656): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(316): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->update('17')
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#11 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-11 02:07:45 --> Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'Jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:07:45\'
+WHERE `anak`.`idanak` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'Jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:07:45\'
+WHERE `anak`.`idanak` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'Jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:07:45\'
+WHERE `anak`.`idanak` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `anak` SET `iduser` = :iduser:, `anaknama` = :anaknama:, `nik` = :nik:, `tmptlhr` = :tmptlhr:, `tgllhr` = :tgllhr:, `jk` = :jk:, `namatmptlhr` = :namatmptlhr:, `jeniskelahiran` = :jeniskelahiran:, `bblahir` = :bblahir:, `tblahir` = :tblahir:, `lklahir` = :lklahir:, `updated_at` = :updated_at:
+WHERE `anak`.`idanak` IN :anak.idanak:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\Anak.php(316): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->update('17')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-11 02:08:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `anak` S...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `anak` S...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `anak` S...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `anak` S...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\taposyandu\system\BaseModel.php(656): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(316): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->update('17')
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#11 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-11 02:08:16 --> Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'Jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:08:16\'
+WHERE `anak`.`idanak` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'Jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:08:16\'
+WHERE `anak`.`idanak` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'Jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:08:16\'
+WHERE `anak`.`idanak` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `anak` SET `iduser` = :iduser:, `anaknama` = :anaknama:, `nik` = :nik:, `tmptlhr` = :tmptlhr:, `tgllhr` = :tgllhr:, `jk` = :jk:, `namatmptlhr` = :namatmptlhr:, `jeniskelahiran` = :jeniskelahiran:, `bblahir` = :bblahir:, `tblahir` = :tblahir:, `lklahir` = :lklahir:, `updated_at` = :updated_at:
+WHERE `anak`.`idanak` IN :anak.idanak:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\Anak.php(316): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->update('17')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-11 02:10:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `anak` S...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `anak` S...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `anak` S...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `anak` S...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\taposyandu\system\BaseModel.php(656): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(316): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->update('17')
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#11 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-11 02:10:35 --> Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'kontol marcel\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:10:35\'
+WHERE `anak`.`idanak` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'kontol marcel\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:10:35\'
+WHERE `anak`.`idanak` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'\', `nik` = \'3508967653214542\', `tmptlhr` = \'kontol marcel\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:10:35\'
+WHERE `anak`.`idanak` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `anak` SET `iduser` = :iduser:, `anaknama` = :anaknama:, `nik` = :nik:, `tmptlhr` = :tmptlhr:, `tgllhr` = :tgllhr:, `jk` = :jk:, `namatmptlhr` = :namatmptlhr:, `jeniskelahiran` = :jeniskelahiran:, `bblahir` = :bblahir:, `tblahir` = :tblahir:, `lklahir` = :lklahir:, `updated_at` = :updated_at:
+WHERE `anak`.`idanak` IN :anak.idanak:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\Anak.php(316): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->update('17')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-06-11 02:11:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`)) in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `anak` S...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `anak` S...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `anak` S...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `anak` S...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\taposyandu\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\taposyandu\system\BaseModel.php(656): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\taposyandu\app\Controllers\Anak.php(316): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Anak->update('17')
+#10 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+#11 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-11 02:11:08 --> Cannot add or update a child row: a foreign key constraint fails (`posyandu`.`anak`, CONSTRAINT `anak_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `users` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'Zaskia Alaina\', `nik` = \'3508967653214542\', `tmptlhr` = \'jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:11:08\'
+WHERE `anak`.`idanak` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'Zaskia Alaina\', `nik` = \'3508967653214542\', `tmptlhr` = \'jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:11:08\'
+WHERE `anak`.`idanak` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `anak` SET `iduser` = \'\', `anaknama` = \'Zaskia Alaina\', `nik` = \'3508967653214542\', `tmptlhr` = \'jakarta\', `tgllhr` = \'2024-02-11\', `jk` = \'Laki - Laki\', `namatmptlhr` = \'Rumah Sakit\', `jeniskelahiran` = \'Tunggal\', `bblahir` = \'3\', `tblahir` = \'34\', `lklahir` = \'33\', `updated_at` = \'2024-06-11 02:11:08\'
+WHERE `anak`.`idanak` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `anak` SET `iduser` = :iduser:, `anaknama` = :anaknama:, `nik` = :nik:, `tmptlhr` = :tmptlhr:, `tgllhr` = :tgllhr:, `jk` = :jk:, `namatmptlhr` = :namatmptlhr:, `jeniskelahiran` = :jeniskelahiran:, `bblahir` = :bblahir:, `tblahir` = :tblahir:, `lklahir` = :lklahir:, `updated_at` = :updated_at:
+WHERE `anak`.`idanak` IN :anak.idanak:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\Anak.php(316): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Anak->update('17')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anak))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

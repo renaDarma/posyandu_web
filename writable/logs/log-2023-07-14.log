@@ -1,0 +1,11 @@
+CRITICAL - 2023-07-14 09:35:32 --> Cannot use object of type stdClass as array
+in APPPATH\Views\kader\bumil\databumil.php on line 96.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/bumil/databumil', [], true)
+ 4 APPPATH\Controllers\Bumil.php(38): view('kader/bumil/databumil', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

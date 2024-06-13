@@ -1,0 +1,48 @@
+CRITICAL - 2023-05-21 07:22:15 --> Undefined property: stdClass::$ayahnama
+in APPPATH\Views\admin\datakesbumil.php on line 280.
+ 1 APPPATH\Views\admin\datakesbumil.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ayahnama', 'APPPATH\\Views\\admin\\datakesbumil.php', 280)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datakesbumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/datakesbumil', [], true)
+ 5 APPPATH\Controllers\Kesbumil.php(36): view('admin/datakesbumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kesbumil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kesbumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-21 07:22:16 --> Undefined property: stdClass::$ayahnama
+in APPPATH\Views\admin\datakesbumil.php on line 280.
+ 1 APPPATH\Views\admin\datakesbumil.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ayahnama', 'APPPATH\\Views\\admin\\datakesbumil.php', 280)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datakesbumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/datakesbumil', [], true)
+ 5 APPPATH\Controllers\Kesbumil.php(36): view('admin/datakesbumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kesbumil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kesbumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-21 07:23:41 --> Undefined property: stdClass::$kesbumilnama
+in APPPATH\Views\admin\datakesbumil.php on line 334.
+ 1 APPPATH\Views\admin\datakesbumil.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$kesbumilnama', 'APPPATH\\Views\\admin\\datakesbumil.php', 334)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datakesbumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/datakesbumil', [], true)
+ 5 APPPATH\Controllers\Kesbumil.php(36): view('admin/datakesbumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kesbumil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kesbumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-21 07:24:37 --> Undefined property: stdClass::$anakke
+in APPPATH\Views\admin\datakesbumil.php on line 336.
+ 1 APPPATH\Views\admin\datakesbumil.php(336): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$anakke', 'APPPATH\\Views\\admin\\datakesbumil.php', 336)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datakesbumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/datakesbumil', [], true)
+ 5 APPPATH\Controllers\Kesbumil.php(36): view('admin/datakesbumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kesbumil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kesbumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

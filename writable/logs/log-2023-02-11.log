@@ -1,0 +1,48 @@
+CRITICAL - 2023-02-11 11:38:00 --> Undefined variable $kader
+in APPPATH\Views\admin\tambahkader.php on line 53.
+ 1 APPPATH\Views\admin\tambahkader.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kader', 'APPPATH\\Views\\admin\\tambahkader.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahkader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/tambahkader', [], true)
+ 5 APPPATH\Controllers\Kader.php(44): view('admin/tambahkader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kader->tambahkader()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kader))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:40:12 --> Undefined variable $kader
+in APPPATH\Views\admin\tambahkader.php on line 53.
+ 1 APPPATH\Views\admin\tambahkader.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kader', 'APPPATH\\Views\\admin\\tambahkader.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahkader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/tambahkader', [], true)
+ 5 APPPATH\Controllers\Kader.php(44): view('admin/tambahkader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kader->tambahkader()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kader))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:41:22 --> Undefined variable $kader
+in APPPATH\Views\admin\tambahkader.php on line 53.
+ 1 APPPATH\Views\admin\tambahkader.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kader', 'APPPATH\\Views\\admin\\tambahkader.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahkader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/tambahkader', [], true)
+ 5 APPPATH\Controllers\Kader.php(44): view('admin/tambahkader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kader->tambahkader()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kader))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:41:31 --> Undefined variable $kader
+in APPPATH\Views\admin\tambahkader.php on line 53.
+ 1 APPPATH\Views\admin\tambahkader.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kader', 'APPPATH\\Views\\admin\\tambahkader.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahkader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/tambahkader', [], true)
+ 5 APPPATH\Controllers\Kader.php(44): view('admin/tambahkader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kader->tambahkader()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kader))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

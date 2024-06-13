@@ -1,0 +1,183 @@
+CRITICAL - 2023-07-25 06:55:28 --> Undefined variable $jumlah_kesbumil
+in APPPATH\Views\dashboard.php on line 143.
+ 1 APPPATH\Views\dashboard.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah_kesbumil', 'APPPATH\\Views\\dashboard.php', 143)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(62): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-25 07:35:35 --> Undefined variable $currentPage
+in APPPATH\Views\kader\absen\absenanak.php on line 170.
+ 1 APPPATH\Views\kader\absen\absenanak.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\kader\\absen\\absenanak.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\absen\\absenanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/absen/absenanak', [], true)
+ 5 APPPATH\Controllers\Absen.php(121): view('kader/absen/absenanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-25 07:36:27 --> Undefined variable $title
+in APPPATH\Views\template\index.php on line 10.
+ 1 APPPATH\Views\template\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\template\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/absen/absenanak', [], true)
+ 6 APPPATH\Controllers\Absen.php(125): view('kader/absen/absenanak', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-25 07:44:14 --> Undefined variable $agenda
+in APPPATH\Views\kader\absen\absenanak.php on line 36.
+ 1 APPPATH\Views\kader\absen\absenanak.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agenda', 'APPPATH\\Views\\kader\\absen\\absenanak.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\absen\\absenanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/absen/absenanak', [], true)
+ 5 APPPATH\Controllers\Absen.php(124): view('kader/absen/absenanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-07-25 08:23:24 --> mysqli_sql_exception: Unknown column 'tglagenda' in 'where clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\taposyandu\app\Controllers\Absen.php(109): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-25 08:23:24 --> Unknown column 'tglagenda' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `absenanak`
+WHERE `tglagenda` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `absenanak`
+WHERE `tglagenda` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `absenanak`
+WHERE `tglagenda` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absenanak`
+WHERE `tglagenda` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Absen.php(109): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-07-25 08:25:44 --> mysqli_sql_exception: Unknown column 'tglagenda' in 'where clause' in C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\taposyandu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\taposyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\taposyandu\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\taposyandu\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\taposyandu\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\taposyandu\app\Controllers\Absen.php(120): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+#8 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+#9 C:\xampp\htdocs\taposyandu\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\taposyandu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\taposyandu\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-25 08:25:45 --> Unknown column 'tglagenda' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `absenanak`
+WHERE `tglagenda` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `absenanak`
+WHERE `tglagenda` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `absenanak`
+WHERE `tglagenda` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absenanak`
+WHERE `tglagenda` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Absen.php(120): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-25 08:28:45 --> Undefined variable $absenanak
+in APPPATH\Views\kader\absen\absenanak.php on line 171.
+ 1 APPPATH\Views\kader\absen\absenanak.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $absenanak', 'APPPATH\\Views\\kader\\absen\\absenanak.php', 171)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\absen\\absenanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/absen/absenanak', [], true)
+ 5 APPPATH\Controllers\Absen.php(122): view('kader/absen/absenanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-25 08:29:03 --> Undefined variable $absenanak
+in APPPATH\Views\kader\absen\absenanak.php on line 171.
+ 1 APPPATH\Views\kader\absen\absenanak.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $absenanak', 'APPPATH\\Views\\kader\\absen\\absenanak.php', 171)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\absen\\absenanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/absen/absenanak', [], true)
+ 5 APPPATH\Controllers\Absen.php(122): view('kader/absen/absenanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-25 08:29:20 --> Undefined variable $anak
+in APPPATH\Views\kader\absen\absenanak.php on line 227.
+ 1 APPPATH\Views\kader\absen\absenanak.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anak', 'APPPATH\\Views\\kader\\absen\\absenanak.php', 227)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\absen\\absenanak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/absen/absenanak', [], true)
+ 5 APPPATH\Controllers\Absen.php(122): view('kader/absen/absenanak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Absen->filteranak()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-25 23:25:00 --> Undefined variable $bu
+in APPPATH\Views\kader\bumil\detailbumil.php on line 32.
+ 1 APPPATH\Views\kader\bumil\detailbumil.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bu', 'APPPATH\\Views\\kader\\bumil\\detailbumil.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\bumil\\detailbumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/bumil/detailbumil', [], true)
+ 5 APPPATH\Controllers\Bumil.php(251): view('kader/bumil/detailbumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->detailbumil('3')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-25 23:25:29 --> Attempt to read property "status" on array
+in APPPATH\Views\kader\bumil\detailbumil.php on line 32.
+ 1 APPPATH\Views\kader\bumil\detailbumil.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH\\Views\\kader\\bumil\\detailbumil.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kader\\bumil\\detailbumil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('kader/bumil/detailbumil', [], true)
+ 5 APPPATH\Controllers\Bumil.php(251): view('kader/bumil/detailbumil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Bumil->detailbumil('3')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bumil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
